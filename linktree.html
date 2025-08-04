@@ -1,0 +1,2711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Consoles, acessórios e manutenção com garantia. Visite a Load Games!" />
+    <meta name="keywords" content="videogames, consoles, assistência técnica, loja de games, Load Games" />
+    <meta name="author" content="Load Games" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Load Games - Sua Loja de Games Premium" />
+    <meta property="og:description" content="Consoles, acessórios e manutenção com garantia. Visite a Load Games!" />
+    <meta property="og:image" content="https://seudominio.com/assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://seudominio.com" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Load Games - Sua Loja de Games Premium" />
+    <meta name="twitter:description" content="Consoles, acessórios e manutenção com garantia. Visite a Load Games!" />
+    <meta name="twitter:image" content="https://seudominio.com/assets/images/og-image.jpg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Load Games",
+      "image": "https://seudominio.com/assets/images/logo-main.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Exemplo, 123",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "00000-000",
+        "addressCountry": "BR"
+      },
+      "url": "https://seudominio.com",
+      "telephone": "+55 11 2862-0607"
+    }
+    </script>
+
+    <!-- Google Analytics (exemplo ID, troque por seu ID real) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Load Games - Sua Loja de Games Premium</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+	<style>
+		/* ===== VARIÁVEIS E RESET ===== */
+		:root {
+			--primary: #ff6b00;
+			--secondary: #ff9900;
+			--dark: #1a1a1a;
+			--darker: #121212;
+			--light: #f8f8f8;
+			--gray: #444;
+			--instagram-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+			--transition: all 0.3s ease;
+			--shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+			--border-radius: 16px;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		html { scroll-behavior: smooth; }
+
+body {
+			background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+			color: var(--light);
+			min-height: 100vh;
+			padding: 0;
+			position: relative;
+			overflow-x: hidden;
+		}
+
+		/* ===== PADRÃO DE FUNDO ===== */
+		.bg-pattern {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: 
+				radial-gradient(circle at 10% 20%, rgba(255, 107, 0, 0.05) 0%, transparent 20%),
+				radial-gradient(circle at 90% 80%, rgba(255, 153, 0, 0.05) 0%, transparent 20%);
+			z-index: -1;
+			pointer-events: none;
+		}
+		
+		/* ===== LAYOUT GERAL ===== */
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 5px;
+			box-sizing: border-box;
+		}
+		
+		section {
+			padding: 20px 0;
+		}
+
+		/* ===== PADRONIZAÇÃO DAS LATERAIS ===== */
+		.contact-section,
+		.instagram-section,
+		.posts-section,
+		.reviews-section,
+		.address-section {
+			margin: 40px auto;
+			max-width: 1200px;
+			padding: 30px 20px;
+		}
+
+		.carousel-section {
+			padding: 40px 0;
+			margin: 0 auto;
+			max-width: 1200px;
+		}
+
+		.carousel-container {
+			margin: 0 20px;
+		}
+		
+		h1, h2, h3 {
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 20px;
+		}
+		
+		h1 {
+			font-size: 3.5rem;
+			background: linear-gradient(to right, var(--primary), var(--secondary));
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+		
+		h2 {
+			font-size: 2.5rem;
+			color: var(--light);
+			position: relative;
+			margin-bottom: 40px;
+		}
+		
+		h2:after {
+			content: '';
+			position: absolute;
+			bottom: -15px;
+			left: 0;
+			width: 80px;
+			height: 4px;
+			background: var(--primary);
+			border-radius: 2px;
+		}
+		
+		p {
+			margin-bottom: 20px;
+			font-size: 1.1rem;
+			color: #ddd;
+			line-height: 1.6;
+		}
+		
+		.btn {
+			display: inline-block;
+			padding: 12px 30px;
+			background: var(--primary);
+			color: white;
+			text-decoration: none;
+			border-radius: 50px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: var(--transition);
+			box-shadow: var(--shadow);
+			border: none;
+			cursor: pointer;
+		}
+		
+		.btn:hover {
+			background: #e65a00;
+			transform: translateY(-3px);
+			box-shadow: 0 10px 25px rgba(230, 90, 0, 0.3);
+		}
+		
+		.btn-outline {
+			background: transparent;
+			border: 2px solid var(--primary);
+			color: var(--primary);
+		}
+		
+		.btn-outline:hover {
+			background: var(--primary);
+			color: white;
+		<!-- } -->
+
+		/* ===== ANIMAÇÕES ===== */
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+
+		@keyframes pulse {
+			0% { transform: scale(1); }
+			50% { transform: scale(1.05); }
+			100% { transform: scale(1); }
+		}
+		
+		@keyframes float {
+			0% { transform: translateY(0); }
+			50% { transform: translateY(-8px); }
+			100% { transform: translateY(0); }
+		}
+		
+		@keyframes waveAnimation {
+			0% { left: -100%; }
+			100% { left: 100%; }
+		}
+		
+	
+	/* ==========================================================================
+			   1. CABEÇALHO / HEADER FIXO (Logo, Letreiro e Navegação)
+			   ========================================================================== */
+
+			/* 1.1 LOGO E CONTAINER PRINCIPAL */
+			header {
+			  background: rgba(255, 255, 255, 0.1);
+			  padding: 10px 0;
+			  position: fixed;
+			  width: 100%;
+			  top: 0;
+			  z-index: 1000;
+			  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+			  backdrop-filter: blur(10px);
+			  transition: transform 0.4s ease;
+			}
+
+			.header-container {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  padding: 0 20px;
+			}
+
+			/* 1.2 MENU DE NAVEGAÇÃO */
+			nav ul {
+			  display: flex;
+			  list-style: none;
+			  gap: 30px;
+			}
+
+			nav ul li a {
+			  color: #fff;
+			  text-decoration: none;
+			  font-weight: 500;
+			  position: relative;
+			  padding: 8px 0;
+			  transition: all 0.3s ease;
+			}
+
+			nav ul li a::after {
+			  content: '';
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  width: 0;
+			  height: 2px;
+			  background: var(--primary, #ff6b00);
+			  transition: width 0.3s;
+			}
+
+			nav ul li a:hover::after {
+			  width: 100%;
+			}
+
+			/* 1.2.1 BOTÃO MENU MOBILE */
+			.mobile-menu {
+			  display: none;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  width: 30px;
+			  height: 24px;
+			  background: none !important;
+			  border: none;
+			  cursor: pointer;
+			  position: absolute;
+			  right: 23px;
+			  top: 23px; /* reposicionado para dentro da área cinza */
+			  z-index: 1100;
+			  padding: 0;
+			}
+
+			.mobile-menu span {
+			  display: block;
+			  height: 3px;
+			  width: 100%;
+			  background: #fff;
+			  border-radius: 3px;
+			  transition: all 0.3s ease;
+			  position: absolute;
+			  opacity: 1;
+			  left: 0;
+			  transform: rotate(0deg);
+			}
+
+			.mobile-menu span:nth-child(1) { top: 0px; }
+			.mobile-menu span:nth-child(2) { top: 10px; }
+			.mobile-menu span:nth-child(3) { top: 20px; }
+
+			.mobile-menu.active span:nth-child(1) {
+			  top: 10px;
+			  transform: rotate(135deg);
+			}
+			.mobile-menu.active span:nth-child(2) {
+			  opacity: 0;
+			  left: -30px;
+			}
+			.mobile-menu.active span:nth-child(3) {
+			  top: 10px;
+			  transform: rotate(-135deg);
+			}
+
+			/* 1.3 LETREIRO VERTICAL */
+			.vertical-marquee {
+			  background: rgba(200, 200, 200, 0.3);
+			  backdrop-filter: blur(4px);
+			  overflow: hidden;
+			  height: 36px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  border-top: 1px solid var(--primary, #ff6b00);
+			  border-bottom: 1px solid var(--primary, #ff6b00);
+			  border-radius: 6px;
+			  padding: 0 10px;
+			}
+
+			.marquee-wrapper {
+			  height: 36px;
+			  overflow: hidden;
+			  width: 100%;
+			  position: relative;
+			}
+
+			.marquee-track {
+			  display: flex;
+			  flex-direction: column;
+			  animation: scrollUpInfinite 30s linear infinite;
+			}
+
+			.marquee-item {
+			  height: 36px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  text-align: center;
+			  font-weight: 700;
+			  font-size: 0.8rem;
+			  white-space: nowrap;
+			  color: #000;
+			}
+
+			/* 1.3.1 ANIMAÇÃO DE SUBIDA INFINITA */
+			@keyframes scrollUpInfinite {
+			  0% { transform: translateY(0); }
+			  100% { transform: translateY(-50%); }
+			}
+
+			/* ==========================================================================
+			   2. VISIBILIDADE E RESPONSIVIDADE
+			   ========================================================================== */
+			.mobile-only {
+			  display: none;
+			}
+			.desktop-only {
+			  display: flex;
+			}
+			.vertical-marquee.mobile-only {
+			  display: none;
+			}
+
+			@media (max-width: 768px) {
+			  .mobile-menu {
+				display: flex;
+			  }
+
+			  .mobile-only {
+				display: block;
+			  }
+			  .desktop-only {
+				display: none !important;
+			  }
+
+			  .vertical-marquee.mobile-only {
+				display: block;
+			  }
+
+			  .header-container {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+			  }
+
+			  .vertical-marquee {
+				width: 100%;
+				height: 50px;
+				font-size: 0.9rem;
+			  }
+
+			  .marquee-wrapper,
+			  .marquee-item {
+				height: 50px;
+			  }
+
+			  nav ul {
+				display: none;
+				flex-direction: column;
+				gap: 15px;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				background: rgba(26, 26, 26, 0.95);
+				padding: 20px;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+				z-index: 1001;
+			  }
+
+			  nav ul.active {
+				display: flex;
+			  }
+			}
+			
+		
+		
+        /* ===== ESFERAS DE DESTAQUES - CORREÇÕES ===== */
+        .highlights-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px; /* Espaçamento padrão entre esferas */
+            margin: 25px 0;
+        }
+
+        .highlight-circle {
+            width: 70px;
+            height: 70px; /* Garantindo que altura e largura sejam iguais */
+            border-radius: 50%; /* Garantindo círculo perfeito */
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border: 2px solid white;
+            /* Garantindo círculo perfeito em todas as telas */
+            aspect-ratio: 1/1; /* Nova propriedade para manter proporção */
+        }
+
+        .highlight-circle i {
+            font-size: 30px;
+            color: white;
+        }
+
+        .highlights-container .social-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100px; /* Largura suficiente para evitar sobreposição */
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .highlights-container .social-icon span {
+            color: white;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 5px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            white-space: nowrap; /* Evita quebra de linha */
+        }
+
+        .highlights-container .social-icon:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsividade para as esferas - Correções */
+        @media (max-width: 992px) {
+            .highlights-container {
+                gap: 20px; /* Espaçamento ligeiramente menor */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .highlights-container {
+                gap: 25px; /* Espaçamento equivalente a meia esfera */
+            }
+            .highlight-circle {
+                width: 65px;
+                height: 65px;
+            }
+            .highlight-circle i {
+                font-size: 25px;
+            }
+            .highlights-container .social-icon {
+                width: 90px;
+            }
+            .highlights-container .social-icon span {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .highlights-container {
+                gap: 20px; /* Mantendo bom espaçamento */
+            }
+            .highlight-circle {
+                width: 60px;
+                height: 60px;
+            }
+            .highlight-circle i {
+                font-size: 22px;
+            }
+            .highlights-container .social-icon {
+                width: 85px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .highlights-container {
+                gap: 30px; /* Espaçamento equivalente a meia esfera em mobile */
+            }
+            .highlight-circle {
+                width: 55px;
+                height: 55px;
+            }
+            .highlight-circle i {
+                font-size: 20px;
+            }
+            .highlights-container .social-icon {
+                width: 80px;
+            }
+            .highlights-container .social-icon span {
+                font-size: 0.5rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .highlights-container {
+                gap: 12px; /* Espaçamento mínimo com bom aspecto */
+            }
+            .highlight-circle {
+                width: 50px;
+                height: 50px;
+            }
+            .highlight-circle i {
+                font-size: 18px;
+            }
+            .highlights-container .social-icon {
+                width: 75px;
+            }
+            .highlights-container .social-icon span {
+                font-size: 0.5rem;
+            }
+        }
+		
+		
+	
+
+
+
+
+	
+		
+		/* ===== HERO SECTION ===== */
+		.hero {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 70vh;
+			overflow: hidden;
+			padding-top: 80px; /* Reduzido de 120px */
+			padding-bottom: 60px;
+		}
+					
+		.hero-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 90%; /* Aumenta a altura para mostrar mais da parte inferior */
+			background-image: url('assets/images/backgrounds/hero-home.webp');
+			background-repeat: no-repeat;
+			background-position: center ; /* Foca na parte inferior */
+			background-size: cover; /* Garante que a imagem cubra toda a área */
+			z-index: 1;
+		}
+
+		.hero-content {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+			transform: translateY(-5%); /* Novo ajuste para subir o conteúdo */
+		}
+				
+		.hero-logo {
+			width: 100%;
+			max-width: 420px;
+			height: auto;
+			animation: pulse 2s infinite, float 4s ease-in-out infinite;
+			filter: drop-shadow(0 0 12px rgba(255, 153, 0, 0.5));
+		}
+
+
+		
+		
+		/* ===== CARROSSEL ESTILO STEAM ===== */
+		.steam-carousel {
+			display: flex;
+			height: 450px;
+			background: rgba(30, 30, 30, 0.8);
+			border-radius: var(--border-radius);
+			overflow: hidden;
+			box-shadow: var(--shadow);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			position: relative;
+			gap: 15px;
+		}
+		
+		.main-slide {
+			flex: 3;
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			background-size: cover; /* Padrão: cobrir todo o espaço */
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 75%;
+			border-radius: var(--border-radius);
+			cursor: pointer;
+			min-height: 400px; /* Altura mínima para garantir que apareça */
+			background-color: rgba(26, 26, 26, 0.9); /* Fundo para áreas não preenchidas */
+		}
+		
+		/* Desktop: mostrar imagem inteira */
+		@media (min-width: 993px) {
+			.main-slide {
+				background-size: contain; /* Mostra a imagem inteira */
+				background-position: center;
+			}
+		}
+		
+		/* Mobile: mostrar parte centralizada da imagem */
+		@media (max-width: 992px) {
+			.main-slide {
+				background-size: cover; /* Mostra parte da imagem (cortada) */
+				background-position: center; /* Centraliza o corte */
+			}
+		}
+		
+		.thumbnails {
+			flex: 1;
+			background: rgba(20, 20, 20, 0.9);
+			display: flex;
+			flex-direction: column;
+			overflow-y: auto;
+			padding: 10px 0;
+			width: 25%;
+			border-radius: var(--border-radius);
+		}
+		
+		.thumb-item {
+			display: flex;
+			gap: 15px;
+			padding: 15px;
+			border-radius: 0;
+			cursor: pointer;
+			transition: var(--transition);
+			border-left: 4px solid transparent;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.thumb-item.active {
+			background: rgba(255, 107, 0, 0.1);
+			border-left-color: var(--primary);
+		}
+		
+		.thumb-item:hover {
+			background: rgba(255, 255, 255, 0.05);
+		}
+		
+		/* Efeito de onda para o botão inteiro */
+		.thumb-item::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+			transition: left 0.6s ease;
+			z-index: 0;
+		}
+		
+		.thumb-item.active::before {
+			animation: waveAnimation 1.5s infinite;
+		}
+		
+		.thumb-img {
+			width: 60px;
+			height: 40px;
+			border-radius: 8px;
+			background-size: cover;
+			background-position: center;
+			flex-shrink: 0;
+			position: relative;
+			z-index: 1;
+		}
+		
+		.thumb-title {
+			font-size: 0.9rem;
+			color: var(--light);
+			font-weight: 500;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			position: relative;
+			z-index: 1;
+		}
+		
+		.price-row {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			margin: 15px 0;
+		}
+		
+		.discount-tag {
+			background: var(--primary);
+			color: white;
+			padding: 3px 10px;
+			border-radius: 20px;
+			font-weight: 600;
+			font-size: 0.9rem;
+		}
+		
+		.old-price {
+			text-decoration: line-through;
+			color: #aaa;
+			font-size: 1rem;
+		}
+		
+		.new-price {
+			font-weight: 700;
+			color: var(--light);
+			font-size: 1.2rem;
+		}
+		
+		/* MODIFICAÇÕES SOLICITADAS PARA O CARROSSEL */
+		.main-slide .carousel-content {
+			position: absolute;
+			bottom: 10px;
+			left: 30px;
+			right: 30px;
+			z-index: 2;
+			background: rgba(26, 26, 26, 0.7);
+			padding: 10px;
+			border-radius: var(--border-radius);
+			backdrop-filter: blur(5px);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			display: none;
+		}
+		
+		/* ===== CONTACT BUTTONS ===== */
+		.contact-section {
+			background: rgba(30, 30, 30, 0.7);
+			border-radius: var(--border-radius);
+			padding: 30px;
+			margin: auto auto;
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+		}
+		
+		.buttons-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 15px;
+			margin-top: 20px;
+		}
+		
+		.btn-contact {
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 12px;
+			padding: 15px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: var(--light);
+			text-decoration: none;
+			transition: var(--transition);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			position: relative;
+			overflow: hidden;
+			<!-- min-height: 150px; -->
+			cursor: pointer;
+		}
+		
+		      
+
+           
+
+
+		/* Animação de carregamento com ondas */
+		.btn-contact::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.2), transparent);
+			transition: left 0.6s ease;
+		}
+
+		.btn-contact:hover::before {
+			left: 100%;
+		}
+		
+		.btn-contact:hover {
+			transform: translateY(-5px);
+			background: rgba(255, 107, 0, 0.1);
+			border-color: rgba(255, 107, 0, 0.3);
+			box-shadow: var(--shadow);
+		}
+		
+		.btn-contact i {
+			font-size: 28px;
+			margin-bottom: 10px;
+			transition: var(--transition);
+			position: relative;
+			z-index: 2;
+		}
+		
+		.btn-contact .label {
+			font-weight: 500;
+			font-size: 15px;
+			margin-bottom: 5px;
+			position: relative;
+			z-index: 2;
+		}
+		
+		.btn-contact .subtext {
+			font-size:12px;
+			color: #aaa;
+			position: relative;
+			z-index: 2;
+		}
+		
+		/* Ícones coloridos */
+		.btn-contact i.fa-whatsapp { color: #25D366; }
+		.btn-contact i.fa-phone { color: #2AABEE; }
+		.btn-contact i.fa-qrcode { color: #8A05BE; }
+		.btn-contact i.fa-tiktok { 
+			background: linear-gradient(45deg, #FE2C55, #25F4EE);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+		.btn-contact i.fa-instagram { color: #E1306C; }
+		.btn-contact i.fa-facebook { color: #1877F2; }
+		.btn-contact i.fa-address-book { color: var(--primary); }
+		
+		.btn-contact:hover i {
+			transform: scale(1.1);
+		}
+
+		/* Botão especial para salvar contato */
+		.btn-contact.save-contact {
+			background: linear-gradient(135deg, rgba(255, 107, 0, 0.2), rgba(255, 153, 0, 0.2));
+			border: 1px solid rgba(255, 153, 0, 0.3);
+			grid-column: span 3;
+		}
+
+		.btn-contact.save-contact:hover {
+			background: linear-gradient(135deg, rgba(255, 107, 0, 0.3), rgba(255, 153, 0, 0.3));
+		}
+		
+		/* ===== INSTAGRAM SECTION ===== */
+		.instagram-section {
+			background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(40, 40, 40, 0.8));
+			border-radius: var(--border-radius);
+			padding: 30px;
+			margin: auto auto;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		.section-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+		
+		.instagram-title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			font-size: 1.8rem;
+			background: var(--instagram-gradient);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+			font-weight: 700;
+		}
+		
+		.reels-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 25px;
+			margin-bottom: 50px;
+		}
+		
+		.reel-item {
+			background: rgba(30, 30, 30, 0.8);
+			border-radius: 16px;
+			overflow: hidden;
+			transition: var(--transition);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			position: relative;
+			height: 450px;
+			cursor: pointer;
+		}
+		
+		.reel-item:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+		}
+		
+		.reel-thumbnail {
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		
+		.reel-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: var(--transition);
+		}
+		
+		.reel-overlay::before {
+			content: "\f144";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			font-size: 40px;
+			color: white;
+			z-index: 3;
+		}
+		
+		.reel-item:hover .reel-overlay {
+			opacity: 1;
+		}
+		
+		.reel-content {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 20px;
+			background: rgba(26, 26, 26, 0.7); /* fundo escuro com transparência */
+			backdrop-filter: blur(5px);
+			z-index: -2;
+		}
+		
+		.reel-title {
+			font-weight: 600;
+			margin-bottom: 10px;
+			color: var(--light);
+			font-size: 1.2rem;
+		}
+		
+		.reel-stats {
+			display: flex;
+			justify-content: flex-start;
+			gap: 20px;
+			font-size: 0.9rem;
+			color: #aaa;
+		}
+		
+		.reel-stat {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+		
+		/* Seção de Postagens */
+		.posts-section {
+			background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(40, 40, 40, 0.8));
+			border-radius: var(--border-radius);
+			padding: 30px;
+			margin: auto auto;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		.posts-title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			font-size: 1.8rem;
+			color: var(--secondary);
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+		
+		.posts-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 25px;
+		}
+		
+		.post-item {
+			background: rgba(30, 30, 30, 0.8);
+			border-radius: 16px;
+			overflow: hidden;
+			transition: var(--transition);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			position: relative;
+			height: 250px;
+			cursor: pointer;
+		}
+		
+		.post-item:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+		}
+		
+		.post-thumbnail {
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			z-index: 1;
+		}
+		
+		.post-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: var(--transition);
+		}
+		
+		.post-overlay i {
+			color: white;
+			font-size: 2.5rem;
+		}
+		
+		.post-item:hover .post-overlay {
+			opacity: 1;
+		}
+		
+		.post-content {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 20px;
+			background: rgba(26, 26, 26, 0.7); /* fundo escuro com transparência */
+			backdrop-filter: blur(5px);
+			z-index: -2;
+		}
+		
+		.post-title {
+			font-weight: 600;
+			margin-bottom: 10px;
+			color: var(--light);
+			font-size: 1.2rem;
+		}
+		
+		.post-stats {
+			display: flex;
+			justify-content: flex-start;
+			gap: 20px;
+			font-size: 0.9rem;
+			color: #aaa;
+		}
+		
+		.post-stat {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+		
+		/* ===== ADAPTAÇÕES PARA MOBILE ===== */
+		@media (max-width: 992px) {
+			.reel-thumbnail, .post-thumbnail {
+				background-size: contain; /* Mostrar imagem inteira */
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+		}
+
+		/* ===== REVIEWS SECTION ===== */
+		.reviews-section {
+			background: rgba(30, 30, 30, 0.7);
+			border-radius: var(--border-radius);
+			padding: 40px;
+			margin: auto auto;
+			backdrop-filter: blur(5px);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		.reviews-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin-top: 30px;
+		}
+		
+		.review-card {
+			background: rgba(40, 40, 40, 0.8);
+			border-radius: 16px;
+			padding: 25px;
+			position: relative;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		.review-card:before {
+			content: '"';
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			font-size: 5rem;
+			color: rgba(255, 107, 0, 0.1);
+			font-family: Georgia, serif;
+			line-height: 1;
+		}
+		
+		.stars {
+			color: #FFD700;
+			font-size: 1.2rem;
+			margin-bottom: 15px;
+		}
+		
+		.review-text {
+			font-style: italic;
+			margin-bottom: 20px;
+			color: #ddd;
+			position: relative;
+			z-index: 2;
+		}
+		
+		.review-author {
+			font-weight: 600;
+			color: var(--secondary);
+			text-align: right;
+		}
+		
+		.review-cta {
+			text-align: center;
+			margin-top: 40px;
+		}
+		
+		.review-cta p {
+			font-size: 1.2rem;
+			margin-bottom: 20px;
+			color: var(--light);
+		}
+		
+		/* ===== ESTILO DO GOOGLE AVALIAÇÕES ===== */
+		.google-link {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-weight: 600;
+			text-decoration: none;
+			transition: var(--transition);
+			background: linear-gradient(135deg, rgba(255, 107, 0, 0.2), rgba(255, 153, 0, 0.2));
+			padding: 15px 30px;
+			border-radius: 50px;
+			gap: 10px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			animation: pulse 2s infinite;
+		}
+		
+		.google-link:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+		}
+		
+		.google-g {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background: #4285F4;
+			border-radius: 50%;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			line-height: 24px;
+			margin-right: 5px;
+			font-family: 'Roboto', sans-serif;
+			position: relative;
+			overflow: hidden;
+		}
+
+		/* ===== INDICADORES DE PONTOS PARA MOBILE ===== */
+		.carousel-indicators {
+			display: none;
+			justify-content: center;
+			padding: 15px 0;
+			gap: 10px;
+		}
+		
+		.indicator {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.3);
+			cursor: pointer;
+			transition: var(--transition);
+		}
+		
+		.indicator.active {
+			background: var(--primary);
+		}
+
+		@media (max-width: 992px) {
+			.carousel-indicators {
+				display: flex;
+			}
+			
+			.thumbnails {
+				display: none;
+			}
+		}
+		
+		/* ===== ADDRESS SECTION ===== */
+		.address-section {
+				
+			background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(40, 40, 40, 0.8));
+			border-radius: var(--border-radius);
+			padding: 30px;
+			margin: auto auto;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		
+		}
+		
+		.locations-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin-top: 30px;
+		}
+		
+		.location-card {
+			background: rgba(30, 30, 30, 0.8);
+			border-radius: var(--border-radius);
+			overflow: hidden;
+			box-shadow: var(--shadow);
+			transition: var(--transition);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		.location-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+		}
+		
+		.location-map {
+			height: 200px;
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+		
+		.map-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(26, 26, 26, 0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: var(--transition);
+		}
+		
+		.map-overlay i {
+			color: white;
+			font-size: 2.5rem;
+			background: var(--primary);
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.location-card:hover .map-overlay {
+			opacity: 1;
+		}
+		
+		.location-info {
+			padding: 25px;
+		}
+		
+		.location-title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 15px;
+			color: var(--secondary);
+			font-size: 1.3rem;
+		}
+		
+		.location-title i {
+			color: var(--primary);
+		}
+		
+		.location-text {
+			font-size: 1rem;
+			color: #ddd;
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+		
+		.location-note {
+			font-size: 0.9rem;
+			color: #ff9900;
+			font-style: italic;
+			margin-top: 10px;
+		}
+
+		/* ===== CARTÃO DE CONTATO (MODAL) ===== */
+		.contact-card {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 2000;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
+			backdrop-filter: blur(5px);
+		}
+		
+		.contact-card.show {
+			opacity: 1;
+			visibility: visible;
+		}
+		
+		.card-content {
+			background: rgba(30, 30, 30, 0.95);
+			border-radius: 20px;
+			width: 90%;
+			max-width: 400px;
+			padding: 30px;
+			text-align: center;
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+			border: 1px solid rgba(255, 153, 0, 0.3);
+			position: relative;
+			transform: scale(0.9);
+			transition: transform 0.3s ease;
+		}
+		
+		.contact-card.show .card-content {
+			transform: scale(1);
+		}
+		
+		.card-content h3 {
+			font-size: 24px;
+			margin-bottom: 20px;
+			color: var(--secondary);
+		}
+		
+		.card-content p {
+			margin: 10px 0;
+			color: #aaa;
+			text-align: left;
+			padding-left: 30px;
+			position: relative;
+		}
+		
+		.card-content p i {
+			position: absolute;
+			left: 0;
+			top: 5px;
+			color: var(--secondary);
+			width: 24px;
+			text-align: center;
+		}
+		
+		.card-buttons {
+			display: flex;
+			gap: 10px;
+			margin-top: 25px;
+			justify-content: center;
+		}
+		
+		.card-btn {
+			padding: 10px 20px;
+			border-radius: 8px;
+			border: none;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		
+		.card-btn.primary {
+			background: var(--primary);
+			color: white;
+		}
+		
+		.card-btn.secondary {
+			background: transparent;
+			color: #aaa;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+		}
+		
+		.card-btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+		}
+		
+		.close-card {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			background: none;
+			border: none;
+			color: #aaa;
+			font-size: 24px;
+			cursor: pointer;
+			transition: color 0.3s ease;
+		}
+		
+		.close-card:hover {
+			color: var(--secondary);
+		}
+
+		/* ===== NOTIFICAÇÕES ===== */
+		.notification {
+			position: fixed;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%) translateY(-100px);
+			background: rgba(40, 40, 40, 0.9);
+			color: var(--secondary);
+			padding: 15px 30px;
+			border-radius: 50px;
+			font-weight: 500;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+			border: 1px solid rgba(255, 107, 0, 0.3);
+			transition: transform 0.5s ease, opacity 0.3s ease;
+			z-index: 1000;
+			backdrop-filter: blur(10px);
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.notification.show {
+			transform: translateX(-50%) translateY(0);
+			opacity: 1;
+			pointer-events: auto;
+		}
+		
+		/* ===== FOOTER ===== */
+		footer {
+			background: rgba(18, 18, 18, 0.95);
+			padding: 60px 0 30px;
+			border-top: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		.footer-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 40px;
+			margin-bottom: 40px;
+		}
+		
+		.footer-about {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			text-align: center; /* Centraliza todo o conteúdo */
+		}
+
+		.footer-logo {
+			display: block; /* Altera para bloco para centralizar corretamente */
+			margin: 0 auto; /* Centraliza horizontalmente */
+		}
+		
+		.footer-logo img {
+			height: 230px; /* Aumentado conforme solicitado */
+			align-items: center
+		}
+		
+		.footer-social {
+			display: flex;
+			gap: 15px;
+			margin-top: 15px;
+		}
+		
+		.footer-social a {
+			width: 45px;
+			height: 45px;
+			background: rgba(255, 255, 255, 0.05);
+			color: var(--light);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: var(--transition);
+			font-size: 1.2rem;
+		}
+		
+		.footer-social a:hover {
+			background: var(--primary);
+			transform: translateY(-5px);
+		}
+		
+		.footer-links h4 {
+			color: var(--light);
+			margin-bottom: 25px;
+			position: relative;
+			padding-bottom: 10px;
+			font-size: 1.3rem;
+		}
+		
+		.footer-links h4:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 50px;
+			height: 3px;
+			background: var(--primary);
+		}
+		
+		.footer-links ul {
+			list-style: none;
+		}
+		
+		.footer-links ul li {
+			margin-bottom: 12px;
+		}
+		
+		.footer-links ul li a {
+			color: #aaa;
+			text-decoration: none;
+			transition: var(--transition);
+			display: inline-block;
+		}
+		
+		.footer-links ul li a:hover {
+			color: var(--secondary);
+			transform: translateX(5px);
+		}
+		
+		.copyright {
+			text-align: center;
+			padding-top: 30px;
+			border-top: 1px solid rgba(255, 255, 255, 0.05);
+			color: #777;
+			font-size: 0.9rem;
+		}
+		
+		/* ======================== RESPONSIVIDADE 992 px =========================== */
+		@media (max-width: 992px) {
+			h1 { font-size: 2.8rem; }
+			h2 { font-size: 2.2rem; }
+			
+			.steam-carousel {
+				flex-direction: column;
+				height: auto;
+			}
+			
+			.main-slide {
+				width: 100%;
+				height: 400px; /* Altura fixa para mobile */
+			}
+			
+			.thumbnails {
+				width: 100%;
+				height: 150px;
+				flex-direction: row;
+				overflow-x: auto;
+				padding: 10px;
+				gap: 10px;
+			}
+			
+			.thumb-item {
+				flex-direction: column;
+				width: 120px;
+				text-align: center;
+				border-left: none;
+				border-top: 4px solid transparent;
+			}
+			
+			.thumb-item.active {
+				border-left: none;
+				border-top: 4px solid var(--primary);
+			}
+			
+			.thumb-img {
+				width: 100px;
+				height: 60px;
+			}
+			
+			.carousel-indicators {
+				display: flex;
+			}
+
+			/* Ajustes para o novo hero */
+			
+			.hero {
+				min-height: auto;
+				padding-top: 120px;
+				padding-bottom: 60px;
+			}
+			
+			
+			.hero-content {
+				position: relative;
+				z-index: 1;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 25px;
+				transform: translateY(-5%); /* Novo ajuste para subir o conteúdo */
+			}
+			
+			
+			.logo-container {
+				width: 280px;
+				height: 140px;
+			}
+			
+			.subtitle {
+				font-size: 1.2rem;
+			}
+		}
+		
+		/* ======================== RESPONSIVIDADE 768 px =========================== */
+	
+	@media (max-width: 768px) {
+			
+			
+			
+	
+
+			
+			
+			
+			nav ul {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				background: rgba(26, 26, 26, 0.95);
+				flex-direction: column;
+				align-items: center;
+				padding: 20px 0;
+				gap: 15px;
+				clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+				transition: var(--transition);
+				backdrop-filter: blur(10px);
+			}
+			
+			nav ul.active {
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			}
+			
+			.buttons-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			
+			.reels-grid, .posts-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.post-item {
+				height: 340px; /* altura para celular */
+			}
+
+			.hero-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%; /* Aumenta a altura para mostrar mais da parte inferior */
+			background-image: url('assets/images/backgrounds/hero-home.webp');
+			background-repeat: no-repeat;
+			background-position: center 65%;
+			background-size: contain; /* Garante que a imagem cubra toda a área */
+			z-index: 1;
+		}
+
+			.hero-content {
+			  position: relative;
+			  z-index: 1;
+			  text-align: center;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: center;
+			  gap: 100%;
+			transform: translateY(-5%); /* Novo ajuste para subir o conteúdo */
+
+
+
+
+	
+			
+			<!-- .hero-subtitle { -->
+				<!-- font-size: 14px; -->
+				<!-- padding: 12px 20px; -->
+			<!-- } -->
+			.hero-logo {
+				max-width: 240px;
+			}
+			.hero-socials .social-icon {
+				width: 45px;
+				height: 45px;
+				font-size: 18px;
+			}
+			
+			
+			.logo-container {
+				width: 240px;
+				height: 120px;
+			}
+			
+			.social-icon {
+				width: 45px;
+				height: 45px;
+				font-size: 20px;
+			}
+		}
+/* ======================== RESPONSIVIDADE 480 px =========================== */
+
+		@media (max-width: 480px) {
+			h1 { font-size: 2.3rem; }
+			h2 { font-size: 2rem; }
+			
+			section {
+				padding: 60px 0;
+			}
+			
+			.buttons-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			
+			.instagram-section {
+			background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(40, 40, 40, 0.8));
+			border-radius: var(--border-radius);
+			padding: 5px;
+			margin: 10px 10px;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+			.reels-grid .posts-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 25px;
+			margin-bottom: 50px;
+			}
+			
+			.reel-content {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 10px;
+			background: rgba(26, 26, 26, 0.7); /* fundo escuro com transparência */
+			backdrop-filter: blur(3px);
+			z-index: -2;
+			
+		}
+			.post-content {
+	
+			z-index: -1;
+		}
+		
+				.reel-title {
+			font-weight: 300;
+			margin-bottom: 10px;
+			color: var(--light);
+			font-size: .9rem;
+		}
+		
+		.post-title {
+			font-weight: 300;
+			margin-bottom: 10px;
+			color: var(--light);
+			font-size: .9rem;
+		}
+				.reel-item {
+			background: rgba(30, 30, 30, 0.8);
+			border-radius: 16px;
+			overflow: hidden;
+			transition: var(--transition);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			position: relative;
+			height: 280px;
+			cursor: pointer;
+			}
+			
+			.post-item {
+			background: rgba(30, 30, 30, 0.8);
+			border-radius: 16px;
+			overflow: hidden;
+			transition: var(--transition);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			position: relative;
+			height: 150px;
+			cursor: pointer;
+		}
+				.google-link {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-weight: 600;
+			text-decoration: none;
+			transition: var(--transition);
+			background: linear-gradient(135deg, rgba(255, 107, 0, 0.2), rgba(255, 153, 0, 0.2));
+			padding: 15px 15px;
+			border-radius: 50px;
+			gap: 10px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			animation: pulse 2s infinite;
+		}
+		
+		
+			nav ul {
+				transform: translateY(-100%);
+				opacity: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			nav ul.active {
+				transform: translateY(0);
+				opacity: 1;
+				height: auto;
+				padding: 30px 0;
+			}
+			
+			.logo img {
+				height: 95px;
+			}
+
+			.btn-contact.save-contact {
+				grid-column: span 2;
+			}
+			
+			.main-slide .carousel-content {
+				left: 15px;
+				right: 15px;
+				bottom: 15px;
+				padding: 15px;
+			}
+
+			/* Ajustes para o novo hero */
+			
+		.hero-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%; /* Aumenta a altura para mostrar mais da parte inferior */
+			background-image: url('assets/images/backgrounds/hero-home.webp');
+			background-repeat: no-repeat;
+			background-position: center 53%;
+			background-size: contain; /* Garante que a imagem cubra toda a área */
+			z-index: 1;
+		}
+
+			.hero-content {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transform: translateY(4%); /* Ajuste mais seguro ajuste para subir o conteúdo */
+			gap: 30px; /* Espaçamento adequado */
+		}
+
+		.hero-logo {
+			width: 70%;
+			max-width: 420px;
+			height: auto;
+			animation: pulse 2s infinite, float 4s ease-in-out infinite;
+			filter: drop-shadow(0 0 12px rgba(255, 153, 0, 0.5));
+		}
+		
+		.reviews-section {
+			background: rgba(30, 30, 30, 0.7);
+			border-radius: var(--border-radius);
+			padding: 10px;
+			margin: 10px 0;
+			backdrop-filter: blur(5px);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+		
+		
+			.reviews-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 10px;
+			margin-top: 10px;
+		}
+		
+				.review-card {
+			background: rgba(40, 40, 40, 0.8);
+			border-radius: 16px;
+			padding: 10px;
+			position: relative;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+		}
+			.logo-container {
+				width: 200px;
+				height: 100px;
+			}
+			
+			.subtitle {
+				font-size: 1rem;
+				padding: 6px 15px;
+			}
+			
+			
+			
+			.social-icon {
+				width: 40px;
+				height: 40px;
+				font-size: 18px;
+			}
+		}
+
+		
+		
+
+	</style>
+	</head>
+	<body>
+	<div class="bg-pattern"></div>
+
+	<!-- /* ========================================================================== -->
+			   <!-- 1. CABEÇALHO / HEADER FIXO (Logo, Letreiro e Navegação) -->
+			   <!-- ========================================================================== */ -->
+
+
+			<header>
+			  <div class="container header-container">
+
+				<!-- 1.1 LOGO (visível apenas no desktop) -->
+				<a class="logo desktop-only" href="#">
+				  <img loading="lazy" alt="Load Games Logo" src="assets/images/logos/logo-hero.png"style="height: 60px; width: auto;" />
+				</a>
+
+				<!-- 1.2 MENU MOBILE (sempre visível) -->
+				<button class="mobile-menu" id="mobileMenu">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</button>
+
+				<!-- 1.3 LETREIRO (somente para mobile) -->
+				<section class="vertical-marquee mobile-only">
+				  <div class="marquee-wrapper">
+					<div class="marquee-track">
+					  <!-- 5 Frases + repetição ate 41 caracteres cada frase-->
+					  <div class="marquee-item">PROMOÇÕES IMPERDIVEIS PARA O DIA DAS<br/>CRIANÇAS SÓ NA LOADGAMES!</div>
+					  <div class="marquee-item">TELAS PARA CELULAR!</div>
+					  <div class="marquee-item">UPGRADE E MONTAGEM DE PC GAMER!</div>
+					  <div class="marquee-item">TROCA DE METAL LIQUIDO EM PS5!</div>
+					  <div class="marquee-item">LUZ VERMELHA NO XBOX 360?</div>
+					  <div class="marquee-item">DRIFT NUNCA MAIS!</div>
+					  <div class="marquee-item">LIMPEZA E TROCA DA PASTA TERMICA EM PS4!</div>
+					  <div class="marquee-item">REPARO EM PLACAS DE GAMES!</div>
+					  <div class="marquee-item">TELAS E TECLADOS PARA NOTEBOOKS</div>
+					  <div class="marquee-item">💬 SUPORTE RAPIDO VIA WHATSAPP!</div>
+					    <!-- Repetição -->
+					  <div class="marquee-item">PROMOÇÕES IMPERDIVEIS PARA O DIA DAS<br/>CRIANÇAS SÓ NA LOADGAMES!</div>
+					  <div class="marquee-item">TELAS PARA CELULAR!</div>
+					  <div class="marquee-item">UPGRADE E MONTAGEM DE PC GAMER!</div>
+					  <div class="marquee-item">TROCA DE METAL LIQUIDO EM PS5!</div>
+					  <div class="marquee-item">LUZ VERMELHA NO XBOX 360?</div>
+					  <div class="marquee-item">DRIFT NUNCA MAIS!</div>
+					  <div class="marquee-item">LIMPEZA E TROCA DA PASTA TERMICA EM PS4!</div>
+					  <div class="marquee-item">REPARO EM PLACAS DE GAMES!</div>
+					  <div class="marquee-item">TELAS E TECLADOS PARA NOTEBOOKS</div>
+					  <div class="marquee-item">💬 SUPORTE RAPIDO VIA WHATSAPP!</div>
+					</div>
+				  </div>
+				</section>
+
+				<!-- 1.2 NAVEGAÇÃO DESKTOP -->
+				<nav aria-label="Navegação principal">
+				  <ul>
+					<li><a href="#hero">Início</a></li>
+					<li><a href="#instagram-reels">CAMPO LIMPO</a></li>
+					<li><a href="#instagram-posts">PARQUE PINHEIROS</a></li>
+					<li><a href="#locations">JOÃO XXIII</a></li>
+					<li><a href="#reviews">Avaliações</a></li>
+				  </ul>
+				</nav>
+			  </div>
+			</header>
+
+
+	<!-- ==========================================================================
+		 4. HERO (SEÇÃO PRINCIPAL)
+		 ========================================================================== -->
+	<section class="hero" id="hero">
+	  <div class="hero-background"></div>
+	  <div class="container">
+		<div class="hero-content">
+		  <img loading="lazy" class="hero-logo" src="assets/images/logos/logo-main.png" alt="Load Games Logo"/>
+
+  
+		</div>
+	  </div>
+	</section>
+
+
+	<!-- ==========================================================================
+		 5. CARROSSEL ESTILO STEAM / EPIC
+		 ========================================================================== -->
+	<section class="carousel-section">
+		<div class="container">
+			<div class="steam-carousel" id="steamCarousel">
+				<!-- Área Principal do Slide -->
+				<div class="main-slide" style="background-image: url('assets/images/carrossel/slide1.webp');">
+					<div class="carousel-overlay"></div>
+					<div class="carousel-content">
+						<h3 id="slideTitle">Promoção de Verão</h3>
+						<p id="slideDescription">Aproveite os melhores preços em jogos e acessórios nesta temporada de verão!</p>
+						<div class="price-row">
+							<span class="discount-tag" id="slideDiscount">-30%</span>
+							<span class="old-price" id="slideOldPrice">R$ 150,00</span>
+							<span class="new-price" id="slideNewPrice">R$ 105,00</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Lista Lateral de Miniaturas -->
+				<div class="thumbnails" id="thumbnailsList">
+					<!-- Miniaturas serão geradas pelo JavaScript -->
+				</div>
+			</div>
+			
+			<!-- Container para os indicadores de pontos -->
+			<div class="carousel-indicators" id="indicatorsContainer"></div>
+		</div>
+	</section>
+
+	<!-- ==========================================================================
+		 6. BOTÕES DE CONTATO (SEÇÃO DE ATENDIMENTO)
+		 ========================================================================== -->
+	<section class="contact-section" id="contact">
+		<div class="container">
+			<h2>Entre em Contato</h2>
+			<p>Temos várias formas de atendimento para melhor servir você.</p>
+			</div>
+	</section>
+
+	<!-- ==========================================================================
+		 7. CAMPO LIMPO
+		 ========================================================================== -->
+	<section class="instagram-section" id="instagram-reels">
+		<div class="container">
+			<div class="section-header">
+				<div class="instagram-title">
+					CAMPO LIMPO
+				</div>
+			</div>
+			
+					
+			<div class="buttons-grid">
+				<a class="btn-contact" href="https://wa.me/551128620607" target="_blank">
+					<i class="fab fa-whatsapp"></i>
+					<div class="label">WhatsApp</div>
+					<div class="subtext">(11) 2862-0607</div>
+				</a>
+				
+				
+				<a class="btn-contact" href="tel:+551128620607">
+					<i class="fas fa-phone"></i>
+					<div class="label">Telefone</div>
+					<div class="subtext">Ligar agora</div>
+				</a>
+			</div>
+		<div class="buttons-grid">
+	</div>
+			<div class="location-card">
+					<div class="location-map" style="background-image: url('assets/images/maps/campolimpo.webp')">
+						<div class="map-overlay">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+					</div>
+					<div class="location-info">
+						<div class="location-title">
+							<i class="fas fa-store"></i> Campo Limpo
+						</div>
+						<div class="location-text">R. Mário Neme, 48<br/>Campo Limpo - SP</div>
+						<div class="location-note">(Travessa da estrada do campo limpo, próximo ao Banco do Brasil)<br/><br/></div>
+						<a class="btn" href="https://maps.app.goo.gl/58iZjW42ngzubFZ89" target="_blank">Ver no Mapa</a>
+					</div>
+				</div>
+		</div>
+	</section>
+	
+	<!-- ==========================================================================
+		 7. PARQUE PINHEIROS
+		 ========================================================================== -->
+<section class="posts-section" id="instagram-posts">
+		<div class="container">
+			<div class="section-header">
+				<div class="instagram-title">
+					PARQUE PINHEIROS
+				</div>
+			</div>
+			
+					
+			<div class="buttons-grid">
+				<a class="btn-contact" href="https://wa.me/551143858760" target="_blank">
+					<i class="fab fa-whatsapp"></i>
+					<div class="label">WhatsApp</div>
+					<div class="subtext">(11) 4385-8760</div>
+				</a>
+				
+				
+				<a class="btn-contact" href="tel:+551143858760">
+					<i class="fas fa-phone"></i>
+					<div class="label">Telefone</div>
+					<div class="subtext">Ligar agora</div>
+				</a>
+			</div>
+		<div class="buttons-grid">
+	</div>
+			<div class="location-card">
+				<div class="location-card">
+					<div class="location-map" style="background-image: url('assets/images/maps/pqpinheiros.webp')">
+						<div class="map-overlay">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+					</div>
+					<div class="location-info">
+						<div class="location-title">
+							<i class="fas fa-store"></i> Taboão da Serra
+						</div>
+						<div class="location-text">Av. Paulo Ayres, 470 - Loja 09<br/>Pq. Pinheiros - Taboão da Serra</div>
+						<div class="location-note">(Dentro do Mercado Rod e Raf)<br/><br/></div>
+						<a class="btn" href="https://maps.app.goo.gl/rKraQqmhJPQ7WSLB6" target="_blank">Ver no Mapa</a>
+					</div>
+				</div>
+		</div>
+	</section>
+	
+		<!-- ==========================================================================
+		 7. 					JOÃO XXIII
+		 ========================================================================== -->
+	<section class="address-section" id="locations">
+			<div class="section-header">
+				<div class="instagram-title">
+					JOÃO XXIII
+				</div>
+			</div>
+			
+					
+			<div class="buttons-grid">
+				<a class="btn-contact" href="https://wa.me/5511917907986" target="_blank">
+					<i class="fab fa-whatsapp"></i>
+					<div class="label">WhatsApp</div>
+					<div class="subtext">(11) 91790-7986</div>
+				</a>
+				
+				
+				<a class="btn-contact" href="tel:+5511917907986">
+					<i class="fas fa-phone"></i>
+					<div class="label">Telefone</div>
+					<div class="subtext">Ligar agora</div>
+				</a>
+			</div>
+		<div class="buttons-grid">
+	</div>
+			<div class="location-card">
+				<div class="location-card">
+					<div class="location-map" style="background-image: url('assets/images/maps/pqpinheiros.webp')">
+						<div class="map-overlay">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+					</div>
+					<div class="location-info">
+						<div class="location-title">
+							<i class="fas fa-store"></i> Jardim Esmeralda
+						</div>
+						<div class="location-text">Av. Eng. Heitor Antônio Eiras Garcia, 6363 - Loja 10<br/>Jardim Esmeralda - SP</div>
+						<div class="location-note">(Dentro do Mercado Rod e Raf)<br/><br/></div>
+						<a class="btn" href="https://maps.app.goo.gl/JLAQ78G3ZzGsbDnv9" target="_blank">Ver no Mapa</a>
+					</div>
+				</div>
+		</div>
+	</section>
+
+
+
+	<!-- ==========================================================================
+		 9. AVALIAÇÕES E GOOGLE REVIEWS
+		 ========================================================================== -->
+	<section class="reviews-section" id="reviews">
+		<div class="container">
+			<h2>Avaliações de Clientes</h2>
+			<p>Veja o que nossos clientes dizem sobre nossos produtos e serviços.</p>
+			<div class="reviews-container">
+				<div class="review-card">
+					<div class="stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<!-- <i class="fas fa-star"></i> -->
+					</div>
+					<p class="review-text">"Para o que precisei atendeu muito bem, um concerto no Xbox e controle do aparelho, coisa que outros lugares pediram uns dias pra dar o diagnóstico, neste local ja sai sabendo mais ou menos o valor que pagaria. Ótimo atendimento"</p>
+					<p class="review-author">- Fernando Xavier</p>
+				</div>
+				<div class="review-card">
+					<div class="stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<!-- <i class="fas fa-star-half-alt"></i> -->
+					</div>
+					<p class="review-text">"Sempre encontro os melhores preços na Load Games. Já comprei vários jogos e acessórios. Recomendo muito!"</p>
+					<p class="review-author">- Jheniffer Narlla</p>
+				</div>
+				<div class="review-card">
+					<div class="stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p class="review-text">"Uns queridos, resolvem os problemas mesmo e tem um ótimo atendimento. Só conserto meu celular com eles."</p>
+					<p class="review-author">- Julia Costa Araújo</p>
+				</div>
+			</div>
+			<div class="review-cta">
+				<p>Sua avaliação é muito importante para nós!</p>
+				<a class="google-link" href="https://g.page/r/CUuStQaFwk4qEAE/review" style="font-size: 1.4rem;" target="_blank">
+					<span class="google-logo">
+						<span style="color: #4285F4">G</span>
+						<span style="color: #EA4335">o</span>
+						<span style="color: #FBBC05">o</span>
+						<span style="color: #4285F4">g</span>
+						<span style="color: #34A853">l</span>
+						<span style="color: #EA4335">e</span>
+					</span>
+					 Avaliações
+				</a>
+			</div>
+		</div>
+	</section>
+
+	
+	<!-- ==========================================================================
+		 11. RODAPÉ (FOOTER)
+		 ========================================================================== -->
+	<footer>
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-about">
+					<div class="footer-logo">
+						<img alt="Load Games" src="assets/images/logos/logo-main.png"/>
+					</div>
+					<p>Há mais de 10 anos oferecendo os melhores consoles, acessórios e games com preços imbatíveis.</p>
+					
+				</div>
+				<div class="footer-links">
+					<h4>Links Rápidos</h4>
+				  <ul>
+					<li><a href="#hero">Início</a></li>
+					<li><a href="#instagram-reels">CAMPO LIMPO</a></li>
+					<li><a href="#instagram-posts">PARQUE PINHEIROS</a></li>
+					<li><a href="#locations">JOÃO XXIII</a></li>
+					<li><a href="#reviews">Avaliações</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© 2010 - 2025 Load Games - Todos os direitos reservados</p>
+				<p>CNPJ: 14.451.482/0001-00</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+		// ==========================================================================
+		// 15. UTILITÁRIOS / FUNÇÕES JS AUXILIARES
+		// ==========================================================================
+		
+		// Ajuste dinâmico da imagem de fundo
+		function adjustHeroBackground() {
+			const hero = document.querySelector('.hero');
+			const windowRatio = window.innerWidth / window.innerHeight;
+			
+			// Escolhe o melhor enquadramento baseado na proporção da tela
+			if(windowRatio > 1.5) { // Telas largas (desktop)
+				hero.style.backgroundPosition = "center 30%";
+			} else { // Telas estreitas (mobile)
+				hero.style.backgroundPosition = "center center";
+			}
+		}
+	
+		
+				const carouselData = [
+			{
+				title: "O cabo do seu celular <br/> quebrou?",
+				image: "assets/images/carrossel/slide1.webp",
+				thumbnail: "assets/images/carrossel/slide1.webp",
+				description: "Aproveite os melhores preços em jogos e acessórios nesta temporada de verão!",
+				discount: "-30%",
+				oldPrice: "R$ 150,00",
+				newPrice: "R$ 105,00"
+			},
+			{
+				title: "Reparo em controles",
+				image: "assets/images/carrossel/slide2.webp",
+				thumbnail: "assets/images/carrossel/slide2.webp",
+				description: "Consoles PlayStation 5 disponíveis com frete grátis para todo Brasil!",
+				discount: "-20%",
+				oldPrice: "R$ 229,99",
+				newPrice: "R$ 183,99"
+			},
+			{
+				title: "Manutenção de <br/> controles",
+				image: "assets/images/carrossel/slide3.webp",
+				thumbnail: "assets/images/carrossel/slide3.webp",
+				description: "Os melhores jogos e acessórios para seu Nintendo Switch com descontos especiais.",
+				discount: "-25%",
+				oldPrice: "R$ 120,00",
+				newPrice: "R$ 90,00"
+			},
+			{
+				title: "Limpeza e troca <br/> da pasta térmica",
+				image: "assets/images/carrossel/slide4.webp",
+				thumbnail: "assets/images/carrossel/slide4.webp",
+				description: "Headsets, controles e periféricos de alta qualidade com garantia de 1 ano.",
+				discount: "-15%",
+				oldPrice: "R$ 299,99",
+				newPrice: "R$ 254,99"
+			},
+			{
+				title: "UpGrade e <br/> montagem de pcs",
+				image: "assets/images/carrossel/slide5.webp",
+				thumbnail: "assets/images/carrossel/slide5.webp",
+				description: "Os lançamentos mais esperados com preços especiais para assinantes.",
+				discount: "-10%",
+				oldPrice: "R$ 80,00",
+				newPrice: "R$ 72,00"
+			},
+			{
+				title: "Troca de <br/> analogicos",
+				image: "assets/images/carrossel/slide6.webp",
+				thumbnail: "assets/images/carrossel/slide6.webp",
+				description: "Descontos imperdíveis em jogos selecionados. Aproveite!",
+				discount: "-40%",
+				oldPrice: "R$ 200,00",
+				newPrice: "R$ 120,00"
+			}
+		];
+		
+		// Funções de interatividade
+		function copyToClipboard(text, message) {
+			navigator.clipboard.writeText(text).then(() => {
+				showNotification(message);
+			});
+		}
+		
+		function showNotification(message) {
+			const notification = document.getElementById('notification');
+			notification.textContent = message;
+			notification.classList.add('show');
+			
+			setTimeout(() => {
+				notification.classList.remove('show');
+			}, 3000);
+		}
+
+		// Funções do modal de contato
+		function showContactCard() {
+			document.getElementById('contactCard').classList.add('show');
+		}
+		
+		function hideContactCard() {
+			document.getElementById('contactCard').classList.remove('show');
+		}
+		
+		function saveContact() {
+			showNotification('Contato salvo com sucesso!');
+			setTimeout(hideContactCard, 1500);
+		}
+		
+		// Funções de renderização
+
+		
+
+		
+		function renderSteamThumbnails() {
+			const container = document.getElementById('thumbnailsList');
+			container.innerHTML = '';
+			
+			carouselData.forEach((item, index) => {
+				const thumbElement = document.createElement('div');
+				thumbElement.className = 'thumb-item';
+				if(index === 0) thumbElement.classList.add('active');
+				
+				thumbElement.innerHTML = `
+					<div class="thumb-img" style="background-image: url('${item.thumbnail}')"></div>
+					<div class="thumb-title">${item.title}</div>
+				`;
+				
+				thumbElement.addEventListener('click', () => {
+					goToSlide(index);
+				});
+				
+				container.appendChild(thumbElement);
+			});
+		}
+		
+		// Funções do carrossel
+		let autoSlideInterval;
+		let currentSlideIndex = 0;
+
+		function goToSlide(index) {
+			const slide = carouselData[index];
+			const mainSlide = document.querySelector('.main-slide');
+			const slideTitle = document.getElementById('slideTitle');
+			const slideDescription = document.getElementById('slideDescription');
+			const slideDiscount = document.getElementById('slideDiscount');
+			const slideOldPrice = document.getElementById('slideOldPrice');
+			const slideNewPrice = document.getElementById('slideNewPrice');
+			
+			// Atualizar o slide principal
+			mainSlide.style.backgroundImage = `url('${slide.image}')`;
+			slideTitle.textContent = slide.title;
+			slideDescription.textContent = slide.description;
+			slideDiscount.textContent = slide.discount;
+			slideOldPrice.textContent = slide.oldPrice;
+			slideNewPrice.textContent = slide.newPrice;
+			
+			// Tornar todo o slide um link para o WhatsApp
+			mainSlide.onclick = function() {
+				window.open(`https://wa.me/551128620607?text=${encodeURIComponent('Olá, gostaria de saber mais sobre: ' + slide.title)}`, '_blank');
+			};
+			
+			// Atualizar as miniaturas ativas
+			document.querySelectorAll('.thumb-item').forEach((thumb, idx) => {
+				thumb.classList.toggle('active', idx === index);
+			});
+			
+			// Atualizar os indicadores ativos
+			document.querySelectorAll('.indicator').forEach((indicator, idx) => {
+				indicator.classList.toggle('active', idx === index);
+			});
+			
+			// Atualizar o índice atual
+			currentSlideIndex = index;
+			
+			// Reiniciar o temporizador automático
+			clearInterval(autoSlideInterval);
+			startAutoSlide();
+		}
+		
+		function startAutoSlide() {
+			autoSlideInterval = setInterval(() => {
+				currentSlideIndex = (currentSlideIndex + 1) % carouselData.length;
+				goToSlide(currentSlideIndex);
+			}, 5000);
+		}
+		
+		function renderIndicators() {
+			const container = document.getElementById('indicatorsContainer');
+			container.innerHTML = '';
+			
+			carouselData.forEach((_, index) => {
+				const indicator = document.createElement('div');
+				indicator.className = 'indicator';
+				if(index === 0) indicator.classList.add('active');
+				
+				indicator.addEventListener('click', () => {
+					goToSlide(index);
+				});
+				
+				container.appendChild(indicator);
+			});
+		}
+
+		// Funções de navegação por touch
+		let touchStartX = 0;
+		let touchEndX = 0;
+
+		function handleTouchStart(e) {
+			touchStartX = e.changedTouches[0].screenX;
+		}
+
+		function handleTouchMove(e) {
+			touchEndX = e.changedTouches[0].screenX;
+		}
+
+		function handleTouchEnd() {
+			const diff = touchStartX - touchEndX;
+			const absDiff = Math.abs(diff);
+			
+			// Se o movimento for maior que 50px, consideramos swipe
+			if (absDiff > 50) {
+				if (diff > 0) {
+					// Swipe left: próxima
+					let nextIndex = (currentSlideIndex + 1) % carouselData.length;
+					goToSlide(nextIndex);
+				} else {
+					// Swipe right: anterior
+					let prevIndex = (currentSlideIndex - 1 + carouselData.length) % carouselData.length;
+					goToSlide(prevIndex);
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	// Corrigido: Single source para scroll behavior
+		let lastScrollTop = 0;
+		const header = document.querySelector('header');
+		const headerHeight = header.offsetHeight;
+		const scrollThreshold = 100;
+
+		window.addEventListener('scroll', function() {
+		  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		  const menuIsOpen = document.querySelector('.mobile-menu').classList.contains('active');
+		  
+		  // Não ocultar header se o menu estiver aberto
+		  if (menuIsOpen) return;
+		  
+		  if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+			header.classList.add('hidden');
+		  } else {
+			header.classList.remove('hidden');
+		  }
+		  
+		  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+		}, { passive: true });
+
+		// Menu mobile corrigido
+		document.querySelector('.mobile-menu').addEventListener('click', function() {
+		  const navMenu = document.querySelector('nav ul');
+		  navMenu.classList.toggle('active');
+		  this.classList.toggle('active');
+		  
+		  // Mostrar header quando abrir o menu
+		  header.classList.remove('hidden');
+		});
+
+		// Fechar menu ao clicar em links
+		document.querySelectorAll('nav ul li a').forEach(link => {
+		  link.addEventListener('click', () => {
+			document.querySelector('nav ul').classList.remove('active');
+			document.querySelector('.mobile-menu').classList.remove('active');
+		  });
+		});
+
+		// Smooth scrolling corrigido
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					window.scrollTo({
+						top: target.offsetTop - 80,
+						behavior: 'smooth'
+					});
+					
+					// Fechar menu mobile após clicar em um link
+					document.querySelector('nav ul').classList.remove('active');
+					document.querySelector('.mobile-menu').classList.remove('active');
+				}
+			});
+		});
+		
+		
+		
+		
+		
+
+
+
+
+		// Inicialização corrigida
+		window.addEventListener('load', function() {
+			// Removida chamada duplicada de renderIndicators()
+			
+		
+			renderSteamThumbnails();
+			goToSlide(0);
+			startAutoSlide();
+			
+			// Adicionar eventos de touch ao slide principal
+			const mainSlide = document.querySelector('.main-slide');
+			if (mainSlide) {
+				mainSlide.addEventListener('touchstart', handleTouchStart, false);
+				mainSlide.addEventListener('touchmove', handleTouchMove, false);
+				mainSlide.addEventListener('touchend', handleTouchEnd, false);
+			}
+		});
+		
+		// Eventos de redimensionamento
+		window.addEventListener('resize', adjustHeroBackground);
+	</script>
+	
+<!-- Chat Tawk.to -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/SEU_ID/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</body>
+
+	</html>
+<style>
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+}
+</style>
